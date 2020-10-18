@@ -2899,3 +2899,32 @@ Processing by BlogController#index as HTML
 Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.4ms | Allocations: 6157)
 
 
+Started GET "/" for ::1 at 2020-10-18 10:16:21 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.1ms | Allocations: 295)
+Completed 200 OK in 21ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 1830)
+
+
+Started GET "/blogs" for ::1 at 2020-10-18 10:16:28 -0700
+Processing by BlogController#index as HTML
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mBlog Load (4.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blog/index.html.erb:4
+  Rendered blog/index.html.erb within layouts/application (Duration: 48.5ms | Allocations: 10688)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 49.8ms | ActiveRecord: 10.6ms | Allocations: 16191)
+
+
+Started GET "/blogs" for ::1 at 2020-10-18 10:18:42 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogController#index as HTML
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blog/index.html.erb:4
+  Rendered blog/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 6579)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 19.1ms | ActiveRecord: 5.3ms | Allocations: 12678)
+
+
